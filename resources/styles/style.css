@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/*
+ * Navigation Bar
+ */
+
+.nav_bar {
+  display: flex;
+  flex-direction: row;
+}
+
+.icon_container {
+  width: 55%;
+}
+
+.ksu_logo {
+  width: 10%;
+  display: block;
+  margin: 3% 0 3% 6%;
+}
+
+.main_nav {
+  font-family: "Roboto Slab", serif;
+  display: flex;
+  width: 45%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.login_button {
+  color: #949494;
+}
+
+/*
+ * Main Photo
+ */
+
+.main_photo_container {
+  height: 608px;
+  background-image: url("../imgs/main_photo.jpeg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/*
+.main_photo {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+}*/
+
+.temp {
+  height: 1000px;
+  background-color: black;
+}
