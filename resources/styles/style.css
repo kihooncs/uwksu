@@ -1,23 +1,143 @@
 /*
+ * Buttons
+ */
+
+.view_button {
+  border: 1.2px solid #aaaaaa;
+  grid-column: 2 / 3;
+  text-align: center;
+  color: #797979;
+  font-size: 18px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 30px;
+  width: 174px;
+  justify-self: center;
+}
+
+/*
  * Main Photo
  */
 
 .main_photo_container {
-  height: 608px;
-  background-image: url("../imgs/main_photo.jpeg");
+  height: 600px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url("../imgs/main_photo.jpeg");
   background-attachment: fixed;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.intro {
+  width: 856px;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 /*
-.main_photo {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  opacity: 0.6;
-}*/
+ * People Section
+ */
 
-.temp {
-  height: 1000px;
-  background-color: black;
+.people_section {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  justify-content: center;
+  column-gap: 130px;
+  row-gap: 40px;
+}
+
+.large_title {
+  font-size: 24px;
+}
+
+.small_title {
+  font-size: 18px;
+  color: #808080;
+}
+
+.people_section .large_title,
+.people_section .small_title {
+  grid-column: 1 / -1;
+  white-space: nowrap;
+}
+
+.people_section .large_title {
+  margin-top: 90px;
+}
+
+.people_section .small_title {
+  margin-top: 40px;
+  margin-bottom: 70px;
+}
+
+.person_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.person_photo {
+  width: 200px;
+  border-radius: 50%;
+}
+
+.person_name {
+  font-weight: bold;
+  font-size: 24px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.person_info {
+  font-size: 14px;
+  color: #616161;
+  margin-bottom: 3px;
+}
+
+/*
+ * Events Section
+ */
+
+.events_section {
+  display: grid;
+  grid-template-columns: 280px 280px 280px;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.events_section .large_title {
+  margin-top: 160px;
+  grid-column: 1/-1;
+  margin-bottom: 40px;
+}
+
+.event_container {
+  height: 427px;
+  background-color: rgb(75, 75, 75);
+}
+
+.events_section .view_button {
+  margin-top: 78px;
+}
+
+/*
+ * Sponsors Section
+ */
+
+.sponsors_section {
+  margin-top: 245px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sponsor_photo {
+  margin-top: 90px;
+  display: block;
 }

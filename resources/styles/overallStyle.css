@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+html {
+}
+
 body {
   font-family: "M PLUS Rounded 1c", sans-serif;
 }
@@ -17,6 +20,14 @@ a {
   text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  font-weight: normal;
+  text-align: center;
+}
+
 /*
  * Navigation Bar
  */
@@ -27,22 +38,24 @@ a {
 }
 
 .icon_container {
-  width: 55%;
+  margin: 32px 734px 32px 6.5%;
 }
 
 .ksu_logo {
   width: 108px;
   height: 78px;
   display: block;
-  margin: 32px 626px 32px 54px;
 }
 
 .main_nav {
   font-family: "Roboto Slab", serif;
   display: flex;
-  width: 45%;
-  justify-content: space-around;
   align-items: center;
+}
+
+.main_nav li {
+  margin-right: 161px;
+  white-space: nowrap;
 }
 
 .login_button {
