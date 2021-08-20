@@ -3,40 +3,79 @@
  */
 
 .view_button {
+  display: block;
+  width: 150px;
+  height: 60px;
   border: 1.2px solid #aaaaaa;
-  grid-column: 2 / 3;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.view_button span {
   color: #797979;
-  font-size: 18px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-top: 30px;
-  width: 174px;
-  justify-self: center;
 }
 
 /*
- * Main Photo
+ * Title
  */
 
-.main_photo_container {
-  height: 600px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
-    url("../imgs/main_photo.jpeg");
-  background-attachment: fixed;
+.large_title {
+  font-size: 28px;
+}
+
+/*
+ * Hero Photo
+ */
+
+.hero_photo_section {
+  width: 100%;
+  height: 500px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url("../imgs/hero_photo.jpeg");
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
 
-.intro {
-  width: 856px;
-  color: white;
+.intro_container {
+  height: 120px;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background: linear-gradient(
+    rgba(196, 196, 196, 0) 0%,
+    rgba(0, 0, 0, 0.53) 100%
+  );
+}
+
+.intro_container span {
+  margin-bottom: 30px;
+  color: #ffffff;
+  font-size: 24px;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 27px;
+}
+
+/*
+ * About Us Section
+ */
+
+.aboutUs_section {
+  margin-top: 60px;
+  margin-bottom: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.aboutUs_section p {
+  height: 90px;
+  width: 66.67%;
   text-align: center;
+  line-height: 27px;
   margin-bottom: 50px;
 }
 
@@ -45,35 +84,24 @@
  */
 
 .people_section {
-  display: grid;
-  grid-template-columns: 200px 200px 200px;
-  justify-content: center;
-  column-gap: 130px;
-  row-gap: 40px;
-}
-
-.large_title {
-  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 180px;
 }
 
 .small_title {
-  font-size: 18px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  font-size: 24px;
   color: #808080;
 }
 
-.people_section .large_title,
-.people_section .small_title {
-  grid-column: 1 / -1;
-  white-space: nowrap;
-}
-
-.people_section .large_title {
-  margin-top: 90px;
-}
-
-.people_section .small_title {
-  margin-top: 40px;
-  margin-bottom: 70px;
+.people_container {
+  display: grid;
+  grid-template-columns: 250px 250px 250px;
+  column-gap: 65px;
+  row-gap: 50px;
+  justify-content: center;
 }
 
 .person_container {
@@ -82,62 +110,26 @@
   align-items: center;
 }
 
-.person_photo {
+.profile_photo {
   width: 200px;
   border-radius: 50%;
 }
 
-.person_name {
-  font-weight: bold;
-  font-size: 24px;
-  margin-top: 30px;
-  margin-bottom: 15px;
-}
-
 .person_info {
-  font-size: 14px;
+  margin-top: 30px;
+}
+
+.person_info h3,
+.person_info h4 {
   color: #616161;
-  margin-bottom: 3px;
 }
 
-/*
- * Events Section
- */
-
-.events_section {
-  display: grid;
-  grid-template-columns: 280px 280px 280px;
-  justify-content: center;
-  column-gap: 10px;
+.person_info h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-.events_section .large_title {
-  margin-top: 160px;
-  grid-column: 1/-1;
-  margin-bottom: 40px;
-}
-
-.event_container {
-  height: 427px;
-  background-color: rgb(75, 75, 75);
-}
-
-.events_section .view_button {
-  margin-top: 78px;
-}
-
-/*
- * Sponsors Section
- */
-
-.sponsors_section {
-  margin-top: 245px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.sponsor_photo {
-  margin-top: 90px;
-  display: block;
+.person_info h4 {
+  font-size: 14px;
 }
