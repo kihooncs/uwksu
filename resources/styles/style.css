@@ -87,6 +87,7 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 180px;
+  align-items: center;
 }
 
 .small_title {
@@ -132,4 +133,170 @@
 
 .person_info h4 {
   font-size: 14px;
+}
+
+.people_section .view_button {
+  margin-top: 70px;
+}
+
+/*
+ * Events Section
+ */
+
+.events_section {
+  margin-bottom: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.events_section .large_title {
+  margin-bottom: 100px;
+}
+
+.events_container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.first_column,
+.second_column {
+  width: 438px;
+}
+
+.first_column img,
+.second_cloumn img {
+  display: block;
+}
+
+.first_column {
+  margin-right: 20px;
+}
+
+.photo1,
+.photo2 {
+  height: 437px;
+  margin-bottom: 20px;
+}
+
+.photo3 {
+  height: 245px;
+}
+
+.photo4 {
+  height: 564px;
+  margin-bottom: 20px;
+}
+
+.photo5 {
+  height: 435px;
+}
+
+/*
+ * Sponsors Section
+ */
+
+.sponsors_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 190px;
+}
+
+.sponsors_section .large_title {
+  margin-bottom: 100px;
+}
+
+/*
+ * Footer
+ */
+
+footer {
+  height: 488px;
+  background-color: #c4c4c4;
+}
+
+.contact_container {
+  display: flex;
+  flex-direction: row;
+  padding-top: 35px;
+  width: 100%;
+}
+
+.social_media_container h3,
+.form_container h3 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffffff;
+  display: block;
+}
+
+.social_media_container {
+  margin-left: 153px;
+  margin-right: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.social_media_links {
+  display: flex;
+  margin-top: 25px;
+}
+
+.social_media_links a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #999999;
+  border-radius: 50%;
+}
+
+.margin_links {
+  margin-right: 20px;
+}
+
+.form_container {
+  width: 100%;
+  margin-right: 153px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+input[type="text"] {
+  padding: 12px 20px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  border-color: transparent;
+}
+
+textarea {
+  height: 200px;
+  padding: 12px 20px;
+  border-color: transparent;
+  resize: none;
+  margin-bottom: 10px;
+}
+
+::placeholder {
+  font-size: 18px;
+  color: #c4c4c4;
+}
+
+input[type="submit"] {
+  background-color: #838383;
+  color: white;
+  font-size: 18px;
+  padding: 14px;
+  cursor: pointer;
+  border-color: transparent;
+  height: 50px;
 }
