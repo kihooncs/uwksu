@@ -30,13 +30,32 @@ h4 {
 }
 
 /*
+ * Small Screen
+ */
+
+@media screen and (max-width: 576px) {
+  * {
+    overflow-x: hidden;
+  }
+}
+
+/*
+ * Tiny Screen
+ */
+
+@media screen and (max-width: 320px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+/*
  * Navigation Bar
  */
 
 .nav_bar {
   display: flex;
   flex-direction: row;
-  position: fixed;
   background-color: #ffffff;
   width: 100%;
   height: 90px;
@@ -55,18 +74,35 @@ h4 {
   display: block;
 }
 
-.main_nav {
+.desktop_nav {
   font-family: "Roboto Slab", serif;
   display: flex;
   align-items: center;
   margin-right: 20px;
 }
 
-.main_nav li {
+.desktop_nav li {
   white-space: nowrap;
   margin-left: 50px;
 }
 
 .contactUs_button {
   color: #949494;
+}
+
+@media screen and (max-width: 576px) {
+  .desktop_list {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .nav_bar {
+    height: 65px;
+  }
+
+  .ksu_logo {
+    width: 70px;
+    height: 53px;
+  }
 }
